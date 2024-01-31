@@ -1,0 +1,31 @@
+{
+
+  "Typescript default React component": {
+    "scope": "typescriptreact",
+    "prefix": "fc",
+    "body": [
+      "import React, { FC } from 'react'",
+      "",
+      "type ${TM_FILENAME_BASE}Props={",
+      "  $1",
+      "}",
+      "",
+      "const ${TM_FILENAME_BASE}: FC<${TM_FILENAME_BASE}Props> = ({ $2 }) => {",
+      "  return (",
+      "    <div>",
+      "     ${3:$TM_FILENAME_BASE}",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],},
+  
+  "console": {
+    "prefix": "cn",
+    "body": [
+      "console.log($0);"
+    ],
+    "description": "console"
+  }
+}
